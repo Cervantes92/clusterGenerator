@@ -43,10 +43,13 @@ for i in range(numberOfClusters):
 plt.plot(xPoints, yPoints, 'r.')
 plt.show()
 
+#Numpy print options to supress scientific notation
+np.set_printoptions(suppress = True, formatter = {'float_kind':'{:f}'.format})
+
 #Set as a 2d array
-a = np.asarray([xPoints, yPoints])
+a = np.asarray([xPoints,yPoints])
 np.savetxt("clust.csv", np.transpose(a), delimiter = ",")
 
 #Save the centers array
-centArray = np.asarray([xCenter, yCenter])
+centArray = np.asarray([xCenter,yCenter])
 np.savetxt("cent.csv", np.transpose(centArray), delimiter = ",")
