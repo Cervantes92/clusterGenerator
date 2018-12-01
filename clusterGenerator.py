@@ -8,7 +8,7 @@ clustFieldXSize = 3
 clustFieldYSize = 3
 
 #Cluster metrics
-numberOfClusters = 3
+numberOfClusters = 2
 numberOfPointsPerCluster = 30
 stnDev = 1
 
